@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dse4ta165mp73"]
 
 [ext_resource type="PackedScene" uid="uid://d3n278q1a0jo1" path="res://scenes/character/player/player.tscn" id="1_dphjl"]
-[ext_resource type="PackedScene" uid="uid://bl6802xvnd0l5" path="res://scenes/ui/ui.tscn" id="2_sl2e5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4rhad"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -18,9 +17,6 @@ glow_enabled = true
 [sub_resource type="BoxMesh" id="BoxMesh_4rhad"]
 size = Vector3(10, 1, 10)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_dphjl"]
-data = PackedVector3Array(-5, 0.5, 5, 5, 0.5, 5, -5, -0.5, 5, 5, 0.5, 5, 5, -0.5, 5, -5, -0.5, 5, 5, 0.5, -5, -5, 0.5, -5, 5, -0.5, -5, -5, 0.5, -5, -5, -0.5, -5, 5, -0.5, -5, 5, 0.5, 5, 5, 0.5, -5, 5, -0.5, 5, 5, 0.5, -5, 5, -0.5, -5, 5, -0.5, 5, -5, 0.5, -5, -5, 0.5, 5, -5, -0.5, -5, -5, 0.5, 5, -5, -0.5, 5, -5, -0.5, -5, 5, 0.5, 5, -5, 0.5, 5, 5, 0.5, -5, -5, 0.5, 5, -5, 0.5, -5, 5, 0.5, -5, -5, -0.5, 5, 5, -0.5, 5, -5, -0.5, -5, 5, -0.5, 5, 5, -0.5, -5, -5, -0.5, -5)
-
 [node name="World" type="Node3D" unique_id=1020121680]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1529648502]
@@ -35,15 +31,3 @@ mesh = SubResource("BoxMesh_4rhad")
 
 [node name="Player" parent="." unique_id=1343250677 instance=ExtResource("1_dphjl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-acceleration = 30.0
-jump_force = 12.0
-gravity = 0.98
-run_speed = 6.0
-walk_speed = 3.0
-
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=583431258]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1824189161]
-shape = SubResource("ConcavePolygonShape3D_dphjl")
-
-[node name="UI" parent="." unique_id=199608903 instance=ExtResource("2_sl2e5")]
