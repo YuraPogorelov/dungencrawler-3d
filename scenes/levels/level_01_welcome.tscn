@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b7gf00vg74pra"]
+
+[ext_resource type="PackedScene" uid="uid://dtsxrrp4gcxkb" path="res://scenes/levels/base_level.tscn" id="1_0mf82"]
+[ext_resource type="PackedScene" uid="uid://cjoedygelvujp" path="res://scenes/rooms/entrance.tscn" id="2_iemd2"]
+[ext_resource type="PackedScene" uid="uid://dvjybxy7kx851" path="res://scenes/rooms/foyer.tscn" id="3_xicp7"]
+
+[node name="Level-01-Welcome" unique_id=1001787381 instance=ExtResource("1_0mf82")]
+
+[node name="Entrance" parent="Rooms" parent_id_path=PackedInt32Array(1164195070) index="0" unique_id=146322553 instance=ExtResource("2_iemd2")]
+
+[node name="Foyer" parent="Rooms" parent_id_path=PackedInt32Array(1164195070) index="1" unique_id=31189193 instance=ExtResource("3_xicp7")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1, 0, 6)

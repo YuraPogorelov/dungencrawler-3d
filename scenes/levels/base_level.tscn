@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dtsxrrp4gcxkb"]
+
+[ext_resource type="Script" uid="uid://c4ikib6g6e8gv" path="res://scenes/levels/base_level.gd" id="1_md458"]
+
+[node name="BaseLevel" type="Node3D" unique_id=1001787381]
+script = ExtResource("1_md458")
+
+[node name="Rooms" type="Node3D" parent="." unique_id=1164195070]
+
+[node name="PlayerSpawn" type="Node3D" parent="." unique_id=641500223]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05656737, 0)
