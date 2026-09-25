@@ -22,7 +22,6 @@ func _process(_delta: float) -> void:
 	input_dir = Input.get_vector("strafe_left", "strafe_right", "backward", "forward")
 
 func _physics_process(delta: float) -> void:
-	
 	check_jump_input()
 	process_gravity()
 	
@@ -39,15 +38,14 @@ func _physics_process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
-		rotate_y(-event.relative.x * mouse_sensitivity)
+		rotate_y(-event.relative.x * mouse_sensitivity) # PI 3.14 => 180 degrees 
 		camera.rotate_x(-event.relative.y * mouse_sensitivity)
 		camera.rotation.x = clampf(camera.rotation.x, MAX_ANGLE_LOOK_DOWN, MAX_ANGLE_LOOK_UP)
 
 func check_jump_input() -> void:
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		velocity.y = jump_force
-	
+
 func process_gravity() -> void:
 	if not is_on_floor():
 		velocity.y -= gravity
-	

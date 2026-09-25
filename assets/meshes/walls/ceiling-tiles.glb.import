@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dqn5fddhbf0uu"
-path="res://.godot/imported/walls-tiles.glb-d1c2f76eafa4bf8f6dab542e36c363f8.scn"
+uid="uid://cn1pkb050ti0n"
+path="res://.godot/imported/ceiling-tiles.glb-007231dea9e622f042a5d877fc542232.scn"
 
 [deps]
 
-source_file="res://assets/meshes/walls/walls-tiles.glb"
-dest_files=["res://.godot/imported/walls-tiles.glb-d1c2f76eafa4bf8f6dab542e36c363f8.scn"]
+source_file="res://assets/meshes/walls/ceiling-tiles.glb"
+dest_files=["res://.godot/imported/ceiling-tiles.glb-007231dea9e622f042a5d877fc542232.scn"]
 
 [params]
 

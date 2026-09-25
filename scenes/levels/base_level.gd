@@ -1,7 +1,7 @@
 class_name BaseLevel
 extends Node3D
 
-const PLAYER_PREFAB := preload("res://scenes/character/player/player.tscn")
+const PLAYER_PREFAB := preload("res://scenes/characters/player/player.tscn")
 
 @onready var player_spawn: Node3D = %PlayerSpawn
 

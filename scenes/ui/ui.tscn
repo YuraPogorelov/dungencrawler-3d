@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://bl6802xvnd0l5"]
+[gd_scene format=3 uid="uid://37tccejpw454"]
 
-[ext_resource type="Texture2D" uid="uid://djfpddlbgkqsb" path="res://assets/textures/cursor.png" id="1_u7n8c"]
+[ext_resource type="Texture2D" uid="uid://bjp1lfkxpwqoj" path="res://assets/textures/cursor.png" id="1_u7n8c"]
 
-[node name="UI" type="CanvasLayer" unique_id=1853176613]
+[node name="UI" type="CanvasLayer" unique_id=123153430]
 
-[node name="Cursor" type="TextureRect" parent="." unique_id=43644304]
+[node name="Cursor" type="TextureRect" parent="." unique_id=1135798550]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
