@@ -24,7 +24,7 @@ func _process(_delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	check_jump_input()
 	process_gravity()
-	
+
 	var input_3d_space := Vector3(input_dir.x, 0, -input_dir.y)
 	var target_speed := run_speed if Input.is_action_pressed("run") else walk_speed
 	var desired_velocity := transform.basis * input_3d_space * target_speed
@@ -38,7 +38,7 @@ func _physics_process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
-		rotate_y(-event.relative.x * mouse_sensitivity) # PI 3.14 => 180 degrees 
+		rotate_y(-event.relative.x * mouse_sensitivity) # PI 3.14 => 180 degrees
 		camera.rotate_x(-event.relative.y * mouse_sensitivity)
 		camera.rotation.x = clampf(camera.rotation.x, MAX_ANGLE_LOOK_DOWN, MAX_ANGLE_LOOK_UP)
 
@@ -47,5 +47,5 @@ func check_jump_input() -> void:
 		velocity.y = jump_force
 
 func process_gravity() -> void:
-	if not is_on_floor():
+	if not  is_on_floor():
 		velocity.y -= gravity
